@@ -1,0 +1,16 @@
+PODS:
+  - HLBaseClass (0.1.0)
+
+DEPENDENCIES:
+  - HLBaseClass (from `../`)
+
+EXTERNAL SOURCES:
+  HLBaseClass:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HLBaseClass: b61525385aeba08abeb1bc8e5188e97419a1d597
+
+PODFILE CHECKSUM: 4d463149c504a15f60a67005468e958db79d5038
+
+COCOAPODS: 1.5.0

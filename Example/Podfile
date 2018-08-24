@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HLBaseClass_Example' do
+  pod 'HLBaseClass', :path => '../'
+
+  target 'HLBaseClass_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
