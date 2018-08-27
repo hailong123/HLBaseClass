@@ -8,6 +8,8 @@
 
 #import "HLViewController.h"
 
+#import "HLOneViewController.h"
+
 @interface HLViewController ()
 
 @end
@@ -17,7 +19,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [self removeBackButtonFromSuperView];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+
+    HLOneViewController *oneVC = [[HLOneViewController alloc] init];
+    oneVC.title                = @"默认的标题";
+    [self.navigationController pushViewController:oneVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

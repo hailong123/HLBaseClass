@@ -8,11 +8,26 @@
 
 #import "HLAppDelegate.h"
 
+#import "HLViewController.h"
+
+#import "HLBaseNavigationController.h"
+
 @implementation HLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+
+    HLViewController *vc = [[HLViewController alloc] init];
+    vc.title             = @"根控制器";
+    
+    HLBaseNavigationController *navigationController = [[HLBaseNavigationController alloc] initWithRootViewController:vc navigationHidden:YES];
+    
+    self.window.rootViewController = navigationController;
+    self.window.backgroundColor    = [UIColor whiteColor];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

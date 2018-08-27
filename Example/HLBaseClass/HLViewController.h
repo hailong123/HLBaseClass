@@ -6,8 +6,8 @@
 //  Copyright (c) 2018 771145867@qq.com. All rights reserved.
 //
 
-@import UIKit;
+#import "HLNormalTitleViewController.h"
 
-@interface HLViewController : UIViewController
+@interface HLViewController : HLNormalTitleViewController
 
 @end
