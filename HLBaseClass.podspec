@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HLBaseClass'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HLBaseClass.'
+  s.summary          = '这个是一个简单的基类封装'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-						对基类进行统一的封装
+						对基类进行统一的封装,主要是针对导航栏进行了统一
                        DESC
 
-  s.homepage         = 'https://github.com/771145867@qq.com/HLBaseClass'
+  s.homepage         = 'https://github.com/hailong123/HLBaseClass'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Sea' => '771145867@qq.com' }
