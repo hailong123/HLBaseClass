@@ -109,14 +109,14 @@
     [self.titleView addSubview:backBtn];
 }
 
-- (void)setRightButtonWithImageNamed:(NSString *)imageNamed {
+- (void)setRightButtonWithImageNamed:(NSString *)imageNamed size:(CGSize)size {
     //右视图
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backBtn.frame     = CGRectMake(0, 0, self.titleLabel.height, self.titleLabel.height);
-    backBtn.right     = self.titleView.right;
+    backBtn.frame     = CGRectMake(0, 0, size.width, size.height);
+    backBtn.right     = self.titleView.right - 15;
     backBtn.centerY   = self.titleLabel.centerY;
     
-    backBtn.imageView.contentMode = UIViewContentModeCenter;
+    backBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
     
     [backBtn setImage:[UIImage hl_imageNamed:imageNamed] forState:UIControlStateNormal];
     

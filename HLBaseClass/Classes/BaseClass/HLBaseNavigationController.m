@@ -25,7 +25,7 @@
     HLBaseNavigationController *baseNav = [[HLBaseNavigationController alloc] initWithRootViewController:rootViewController];
     
     [rootViewController useInteractivePopGestureRecognizer];
-    
+
     [baseNav setNavigationBarHidden:hidden animated:NO];
     
     return baseNav;

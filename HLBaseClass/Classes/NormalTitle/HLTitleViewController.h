@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setRightButtonWithTitle:(NSString *)title
                      attributes:(nullable NSDictionary<NSAttributedStringKey, id> *)attrs;
 
-- (void)setRightButtonWithImageNamed:(NSString *)imageNamed;
+- (void)setRightButtonWithImageNamed:(NSString *)imageNamed size:(CGSize)size;
 
 - (void)touchRightButtonEvent:(UIButton *)sender;
 
